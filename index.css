@@ -22,7 +22,6 @@ ul{
     background-color:  #88C1D9;
 color:#525464;
 display: flex;
-justify-content: center;
 font-size: 17px;
 font-family: Arial, Helvetica, sans-serif;
 text-align: left;
@@ -46,6 +45,7 @@ transition: all 0.25s ease;
     text-align: left;
 }
 .sub_list a{
+    padding: 0px 0px 2px 6px;
     color: white;
     height: auto;
     text-align: left;
@@ -62,4 +62,15 @@ ul:hover .sub_list  {
 
 ul:hover #sub{
     width: 320px;
+    padding-left: 5px;
+
+}
+@media(max-width:1405px){
+    .dropdown_menu a{
+height: 45px;
+font-size: 16px;
+}
+ul:hover .sub_list{
+    top: 50px;
+}
 }
